@@ -26,8 +26,11 @@ posicaoP = {
 
 PistaEpinos(pista)
 
+# Só cuidado aqui. Dá a impressão que o usuário vai entrar com alguma informação. 
+# Talvez seria legal deixar como está, mas apenas mudar o texto pra algo como: A sua jogada é:
+# E aí imprimir a variavel jogadas, já que pra alterar a jogada é preciso mudar a variável no próprio código.
 print("Faça sua jogada!!!!\n")
-jogadas = ['3','5','9']
+jogadas = ['6','5','8', '9']
 
 for pino in jogadas:
     posicao = posicaoP[pino]
@@ -35,5 +38,7 @@ for pino in jogadas:
 print()
 
 PistaEpinos(pista)
+# E aqui é interessante incluir uma verificação se há algum pino restante. [
+# Da forma como está, o código sempre imprime isso, mesmo que todos os pinos tenham caído.
 print("Boa tentativa, porem não conseguiu um stike!!!\n")
 print("Game Over")
